@@ -1,5 +1,9 @@
 .menu {
-  display: flex;
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
 }
 
 .menu__item:not(:last-child) {

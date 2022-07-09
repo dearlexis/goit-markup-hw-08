@@ -6,9 +6,16 @@
 }
 
 .footer-elements {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -23,9 +30,14 @@
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
 
   color: #fff;
+
+  @include desktop {
+    text-align: left;
+  }
 }

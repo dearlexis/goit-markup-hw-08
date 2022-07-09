@@ -12,7 +12,16 @@
 }
 
 .header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
+
+  @include tablet {
+    margin-right: 88px;
+    padding: 26px 0;
+  }
+
+  @include desktop {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }

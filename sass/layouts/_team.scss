@@ -7,29 +7,51 @@
 
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   letter-spacing: 0.03em;
   text-align: center;
+
+  @include desktop {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .employees {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .employees__item {
+  width: 100%;
+
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 4);
   }
 }
 
 .team__wrapper {
-  padding: 30px 10px;
+  padding: 30px 10px 24px 10px;
+
+  @include desktop {
+    padding: 30px 10px;
+  }
+}
+
+.employees__img {
+  width: 100%;
 }
 
 .employees__subtitle {
@@ -38,7 +60,7 @@
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -46,9 +68,9 @@
 .employees__text {
   margin-bottom: 16px;
 
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.18;
+  line-height: calc(19 / 16);
   letter-spacing: 0.03em;
   text-align: center;
 }

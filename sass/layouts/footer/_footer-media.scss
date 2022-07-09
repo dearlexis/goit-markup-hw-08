@@ -1,3 +1,11 @@
+.footer__socials {
+  margin-bottom: 60px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
 .soc-media {
   display: flex;
   align-items: center;

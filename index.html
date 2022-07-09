@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Хедер -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header">
         <nav class="site-nav">
           <a href="./index.html" class="logo header__logo">
@@ -53,8 +53,95 @@
             </a>
           </li>
         </ul>
+
+        <!-- mob -->
+        <button type="button" class="mob-header__btn-open mob-menu__btn" data-menu-open>
+          <svg class="mob-header__icon-open" width="40" height="40">
+            <use href="./svg/sprite-ws.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+          <button type="button" class="mob-menu__btn-close mob-menu__btn" data-menu-close>
+            <svg class="mob-menu__icon-close" width="40" height="40">
+              <use href="./svg/sprite-ws.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+
+          <div class="mob-menu__wrap">
+            <div class="mob-menu__top">
+              <ul class="mob-menu__nav">
+            <li class="mob-menu__item-nav">
+              <a href="./index.html" class="mob-menu__link-nav mob-menu__current">Студия</a>
+            </li>
+            <li class="mob-menu__item-nav">
+              <a href="./portfolio.html" class="mob-menu__link-nav">Портфолио</a>
+            </li>
+            <li class="mob-menu__item-nav"><a href="" class="mob-menu__link-nav">Контакты</a></li>
+              </ul>
+            </div>
+
+            <div class="mob-menu__bottom">
+            <ul class="mob-menu__connect">
+            <li class="mob-menu__item-connect">
+              <a href="tel:+380961111111" class="mob-menu__link-tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-menu__item-connect">
+              <a href="mailto:info@devstudio.com" class="mob-menu__link-mail">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-menu__logo">
+            <li class="mob-menu__item-logo">
+              <a href="" class="mob-menu__link-logo">
+                <svg class="mob-menu__icon-logo" width="20" height="20">
+                  <use href="./svg/sprite-ws.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu__item-logo">
+              <a href="" class="mob-menu__link-logo">
+                <svg class="mob-menu__icon-logo" width="20" height="20">
+                  <use href="./svg/sprite-ws.svg#icon-twitter">   
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu__item-logo">
+              <a href="" class="mob-menu__link-logo">
+                <svg class="mob-menu__icon-logo" width="20" height="20">
+                  <use href="./svg/sprite-ws.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-menu__item-logo">
+              <a href="" class="mob-menu__link-logo">
+                <svg class="mob-menu__icon-logo" width="20" height="20">
+                  <use href="./svg/sprite-ws.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="mob-menu__soc">
+            <li class="mob-menu__item-soc">
+              <a href="" class="mob-menu__link-soc">Instagram</a>
+            </li>
+            <li class="mob-menu__item-soc">
+              <a href="" class="mob-menu__link-soc">Twitter</a>
+            </li>
+            <li class="mob-menu__item-soc"><a href="" class="mob-menu__link-soc">Facebook</a></li>
+            <li class="mob-menu__item-soc"><a href="" class="mob-menu__link-soc">LinkedIn</a></li>
+          </ul>
+          </div>
+        </div>
+          
+        </div>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <!-- Основной блок -->
     <main>
@@ -120,7 +207,7 @@
       </section>
 
       <!-- Чем мы занимаемся -->
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -159,10 +246,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="employees">
@@ -336,10 +423,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Клиенты -->
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="company clients__list">
@@ -387,11 +474,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-elements">
         <div class="footer__contacts">
           <a href="" class="logo footer__logo">Web<span class="logo__white">Studio</span></a>
@@ -404,11 +491,11 @@
               <a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!-- Socials -->
+        <!-- Socials -->
 
-    <!-- <div class="footer__socials">
+        <div class="footer__socials">
           <p class="footer__txt">Присоединяйтесь</p>
           <ul class="soc-media">
             <li class="soc-media__item">
@@ -440,11 +527,11 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!-- Mail form -->
+        <!-- Mail form -->
 
-    <!-- <div class="footer__field">
+        <div class="footer__field">
           <p class="footer__txt">Подпишитесь на рассылку</p>
           <form class="footer-form">
             <label class="footer-lable">
@@ -459,7 +546,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
@@ -525,5 +612,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

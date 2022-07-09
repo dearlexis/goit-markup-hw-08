@@ -4,13 +4,20 @@
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+  text-align: center;
+
+  @include desktop {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    text-align: left;
+  }
 }
 
 .logo__black {
-  color: black;
+  color: var(--title-text-color);
 }
 
 .logo__white {
