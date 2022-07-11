@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -213,34 +212,53 @@
           <ul class="work__list">
             <li class="work__item">
               <div class="work__wrap">
-                <img
+                <picture>
+                  <source srcset="
+                  ./images/img_01.jpeg 1x, 
+                  ./images/img_01-2x.jpeg 2x" 
+                  media="(min-width: 1200px)">
+                  <img
                   src="./images/img_01.jpeg"
                   alt="Человек работает за компьютером"
                   width="370"
                   class="work__img"
                 />
+                </picture>
+                
                 <p class="work__txt">Десктопные приложения</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__wrap">
-                <img
+                <picture>
+                  <source srcset="
+                  ./images/img_02.jpeg 1x, 
+                  ./images/img_02-2x.jpeg 2x" 
+                  media="(min-width: 1200px)">
+                  <img
                   src="./images/img_02.jpeg"
                   alt="Человек работает за компьютером"
                   width="370"
                   class="work__img"
                 />
+                </picture>
                 <p class="work__txt">Мобильные приложения</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__wrap">
-                <img
+                <picture>
+                  <source srcset="
+                  ./images/img_03.jpeg 1x, 
+                  ./images/img_03-2x.jpeg 2x" 
+                  media="(min-width: 1200px)">
+                  <img
                   src="./images/img_03.jpeg"
                   alt="Человек работает за компьютером"
                   width="370"
                   class="work__img"
                 />
+                </picture>
                 <p class="work__txt">Дизайнерские решения</p>
               </div>
             </li>
@@ -254,12 +272,28 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="employees">
             <li class="employees__item">
-              <img
-                src="./images/team_01.jpeg"
+              <picture>
+                <source srcset="
+                ./images/team_01.jpeg 1x, 
+                ./images/team_01-2x.jpeg 2x" 
+                media="(min-width: 1200px)">
+
+                <source srcset="
+                ./images/team_01-tab.jpeg 1x, 
+                ./images/team_01-tab-2x.jpeg 2x" 
+                media="(min-width: 768px)">
+
+                <source srcset="./images/team_01-mob.jpeg 1x, 
+                ./images/team_01-mob-2x.jpeg 2x" 
+                media="(min-width: 320px)">
+
+                <img
+                src="./images/team_01-mob.jpeg"
                 alt="Игорь Демьяненко"
-                width="270"
+                width="450"
                 class="employees__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="employees__subtitle">Игорь Демьяненко</h3>
                 <p class="employees__text">Product Designer</p>
@@ -296,12 +330,29 @@
               </div>
             </li>
             <li class="employees__item">
-              <img
-                src="./images/team_02.jpeg"
+              <picture>
+                <source srcset="
+                ./images/team_02.jpeg 1x, 
+                ./images/team_02-2x.jpeg 2x" 
+                media="(min-width: 1200px)">
+
+                <source srcset="
+                ./images/team_02-tab.jpeg 1x, 
+                ./images/team_02-tab-2x.jpeg 2x" 
+                media="(min-width: 768px)">
+
+                <source srcset="./images/team_02-mob.jpeg 1x, 
+                ./images/team_02-mob-2x.jpeg 2x" 
+                media="(min-width: 320px)">
+
+                <img
+                src="./images/team_02-mob.jpeg"
                 alt="Ольга Репина"
-                width="270"
+                width="450"
                 class="employees__img"
               />
+              </picture>
+            
               <div class="team__wrapper">
                 <h3 class="employees__subtitle">Ольга Репина</h3>
                 <p class="employees__text">Frontend Developer</p>
@@ -338,12 +389,29 @@
               </div>
             </li>
             <li class="employees__item">
-              <img
-                src="./images/team_03.jpeg"
+              <picture>
+                <source srcset="
+                ./images/team_03.jpeg 1x, 
+                ./images/team_03-2x.jpeg 2x" 
+                media="(min-width: 1200px)">
+
+                <source srcset="
+                ./images/team_03-tab.jpeg 1x, 
+                ./images/team_03-tab-2x.jpeg 2x" 
+                media="(min-width: 768px)">
+
+                <source srcset="
+                ./images/team_03-mob.jpeg 1x, 
+                ./images/team_03-mob-2x.jpeg 2x" 
+                media="(min-width: 320px)">
+
+                <img
+                src="./images/team_03-mob.jpeg"
                 alt="Николай Тарасов"
-                width="270"
+                width="450"
                 class="employees__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="employees__subtitle">Николай Тарасов</h3>
                 <p class="employees__text">Marketing</p>
@@ -380,12 +448,29 @@
               </div>
             </li>
             <li class="employees__item">
-              <img
-                src="./images/team_04.jpeg"
+              <picture>
+                <source srcset="
+                ./images/team_04.jpeg 1x, 
+                ./images/team_04-2x.jpeg 2x" 
+                media="(min-width: 1200px)">
+
+                <source srcset="
+                ./images/team_04-tab.jpeg 1x, 
+                ./images/team_04-tab-2x.jpeg 2x" 
+                media="(min-width: 768px)">
+
+                <source srcset="
+                ./images/team_04-mob.jpeg 1x, 
+                ./images/team_04-mob-2x.jpeg 2x" 
+                media="(min-width: 320px)">
+
+                <img
+                src="./images/team_04-mob.jpeg"
                 alt="Михаил Ермаков"
-                width="270"
+                width="450"
                 class="employees__img"
               />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="employees__subtitle">Михаил Ермаков</h3>
                 <p class="employees__text">UI Designer</p>

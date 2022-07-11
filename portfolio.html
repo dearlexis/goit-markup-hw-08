@@ -15,7 +15,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -174,12 +173,30 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-01-techno.jpeg"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-01-techno.jpeg 1x,
+                    ./images/portfolio-01-techno-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-01-tab.jpeg 1x,
+                    ./images/portfolio-01-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-01-mob.jpeg 1x,
+                    ./images/portfolio-01-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-01-mob.jpeg"
                     alt="ноутбук с открытым сайтом"
-                    width="370"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
+                  
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -195,12 +212,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-02-poster.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-02-poster.jpeg 1x,
+                    ./images/portfolio-02-poster-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-02-tab.jpeg 1x,
+                    ./images/portfolio-02-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-02-mob.jpeg 1x,
+                    ./images/portfolio-02-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-02-mob.jpeg"
+                    alt="постер с баскетболистами"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -218,12 +252,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-03-seafood.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-03-seafood.jpeg 1x,
+                    ./images/portfolio-03-seafood-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-03-tab.jpeg 1x,
+                    ./images/portfolio-03-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-03-mob.jpeg 1x,
+                    ./images/portfolio-03-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-03-mob.jpeg"
+                    alt="логотип ресторана с рыбой"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -239,12 +290,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-04-prime.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-04-prime.jpeg 1x,
+                    ./images/portfolio-04-prime-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-04-tab.jpeg 1x,
+                    ./images/portfolio-04-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-04-mob.jpeg 1x,
+                    ./images/portfolio-04-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-04-mob.jpeg"
+                    alt="наушники"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -260,12 +328,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-05-boxes.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-05-boxes.jpeg 1x,
+                    ./images/portfolio-05-boxes-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-05-tab.jpeg 1x,
+                    ./images/portfolio-05-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-05-mob.jpeg 1x,
+                    ./images/portfolio-05-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-05-mob.jpeg"
+                    alt="две коробки"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -281,12 +366,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-06-borders.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-06-borders.jpeg 1x,
+                    ./images/portfolio-06-borders-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-06-tab.jpeg 1x,
+                    ./images/portfolio-06-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-06-mob.jpeg 1x,
+                    ./images/portfolio-06-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-06-mob.jpeg"
+                    alt="монитор с открытым сайтом"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -302,12 +404,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-07-limited.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-07-limited.jpeg 1x,
+                    ./images/portfolio-07-limited-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-07-tab.jpeg 1x,
+                    ./images/portfolio-07-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-07-mob.jpeg 1x,
+                    ./images/portfolio-07-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-07-mob.jpeg"
+                    alt="разворот журнала"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -323,12 +442,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-08-lab.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-08-lab.jpeg 1x,
+                    ./images/portfolio-08-lab-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-08-tab.jpeg 1x,
+                    ./images/portfolio-08-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-08-mob.jpeg 1x,
+                    ./images/portfolio-08-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-08-mob.jpeg"
+                    alt="бирка"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
@@ -344,12 +480,29 @@
             <li class="example__item">
               <a href="" class="project">
                 <div class="project__overlay">
-                  <img
-                    src="./images/portfolio-09-growing.jpeg"
-                    alt="ноутбук с открытым сайтом"
-                    width="370"
+                  <picture>
+                    <source srcset="
+                    ./images/portfolio-09-growing.jpeg 1x,
+                    ./images/portfolio-09-growing-2x.jpeg 2x"
+                    media="(min-width: 1200px)">
+
+                    <source srcset="
+                    ./images/portfolio-09-tab.jpeg 1x,
+                    ./images/portfolio-09-tab-2x.jpeg 2x"
+                    media="(min-width: 768px)">
+
+                    <source srcset="
+                    ./images/portfolio-09-mob.jpeg 1x,
+                    ./images/portfolio-09-mob-2x.jpeg 2x"
+                    media="(min-width: 320px)">
+
+                    <img
+                    src="./images/portfolio-09-mob.jpeg"
+                    alt="открытый ноутбук с сайтом"
+                    width="450"
                     class="project__img"
                   />
+                  </picture>
                   <p class="project__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения o компании
