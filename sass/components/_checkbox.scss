@@ -6,9 +6,9 @@
 .checkbox__label {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 12px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -16,9 +16,6 @@
   color: var(--primary-text-color);
 
   @include desktop {
-    align-items: center;
-    justify-content: center;
-
     font-size: 14px;
   }
 }

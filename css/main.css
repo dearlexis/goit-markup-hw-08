@@ -48,7 +48,7 @@ a {
 body {
   background-color: #fff;
   color: #757575;
-  font-family: roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .section {
@@ -146,7 +146,6 @@ body {
   padding: 34px 15px;
   overflow: auto;
   width: 310px;
-  height: 610px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -161,14 +160,12 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: auto;
     padding: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: auto;
   }
 }
 
@@ -212,7 +209,6 @@ body {
   margin-top: 15px;
   margin-bottom: 12px;
   color: var(--title-text-color);
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 18px;
   line-height: 1.15;
@@ -284,40 +280,30 @@ body {
   border-color: var(--accent-color);
 }
 .feedback__comment::-webkit-input-placeholder {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .feedback__comment::-moz-placeholder {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .feedback__comment:-ms-input-placeholder {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .feedback__comment::-ms-input-placeholder {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .feedback__comment::placeholder {
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.01em;
@@ -348,8 +334,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: "Roboto";
-  font-weight: 400;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 12px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -357,12 +347,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .checkbox__label {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-size: 14px;
   }
 }
@@ -811,8 +795,8 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-bg-mob.jpeg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg-mob.jpeg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-bg-mob.jpeg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bg-mob.jpeg");
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-size: cover;
@@ -826,32 +810,32 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-bg-mob-2x.jpeg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg-mob-2x.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-bg-mob-2x.jpeg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bg-mob-2x.jpeg");
   }
 }
 @media (min-width: 481px) {
   .hero__overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-bg-tab.jpeg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg-tab.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-bg-tab.jpeg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bg-tab.jpeg");
   }
 }
 @media (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-bg-tab-2x.jpeg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg-tab-2x.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-bg-tab-2x.jpeg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bg-tab-2x.jpeg");
   }
 }
 @media (min-width: 769px) {
   .hero__overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-bg.jpeg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-bg.jpeg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bg.jpeg");
   }
 }
 @media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
   .hero__overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero-bg-2x.jpeg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-bg-2x.jpeg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-bg-2x.jpeg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-bg-2x.jpeg");
   }
 }
 .hero__title {
@@ -995,7 +979,6 @@ body {
   width: 100%;
   padding: 27px 82px;
   color: #fff;
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1229,26 +1212,11 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 50%;
-  }
-  .footer-elements .footer-elements:last-child {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-elements {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1260,7 +1228,6 @@ body {
   display: block;
   margin-bottom: 20px;
   height: 16px;
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -1378,6 +1345,11 @@ body {
   fill: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-form {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-form {
     display: -webkit-box;
@@ -1393,27 +1365,19 @@ body {
   max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  font-family: "Roboto";
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 768px) {
-  .footer-form__input {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-form__input {
     margin-bottom: 0;
+    margin-left: auto;
   }
 }
 
@@ -1591,10 +1555,8 @@ body {
   position: absolute;
   top: 0;
   height: 100%;
-  padding: 24px 63px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 18px;
+  padding: 24px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #fff;
@@ -1609,4 +1571,10 @@ body {
 .project:hover .project__description, .project:focus .project__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+@media screen and (min-width: 480px) {
+  .project__description {
+    padding: 63px 24px;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

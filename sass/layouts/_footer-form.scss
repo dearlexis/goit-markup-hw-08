@@ -1,4 +1,7 @@
 .footer-form {
+  @include tablet {
+    width: 450px;
+  }
   @include desktop {
     display: flex;
   }
@@ -12,25 +15,19 @@
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
 
-  font-family: 'Roboto';
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.6);
 
-  @include tablet {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
   @include desktop {
+    // width: 358px;
     margin-bottom: 0;
+    margin-left: auto;
   }
 }
 

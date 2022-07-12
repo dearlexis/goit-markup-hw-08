@@ -9,18 +9,8 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 50%;
-
-    .footer-elements:last-child {
-      width: 100%;
-    }
-  }
-
-  @include desktop {
-    display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -33,7 +23,6 @@
   margin-bottom: 20px;
   height: 16px;
 
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);

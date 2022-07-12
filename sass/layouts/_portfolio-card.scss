@@ -67,11 +67,9 @@
   position: absolute;
   top: 0;
   height: 100%;
-  padding: 24px 63px;
+  padding: 24px;
 
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: #fff;
@@ -83,5 +81,10 @@
   .project:hover &,
   .project:focus & {
     transform: translateY(0);
+  }
+
+  @include mobile {
+    padding: 63px 24px;
+    font-size: 18px;
   }
 }
