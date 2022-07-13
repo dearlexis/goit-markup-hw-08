@@ -28,20 +28,20 @@
 @media (min-resolution: 2dppx) {
   .hero__overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/hero-bg-mob-2x.jpeg');
+      url('./images/hero-bg-mob-2x.jpeg');
   }
 }
 
 @media (min-width: 481px) {
   .hero__overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/hero-bg-tab.jpeg');
+      url('./images/hero-bg-tab.jpeg');
   }
 
   @media (min-resolution: 2dppx) {
     .hero__overlay {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/hero-bg-tab-2x.jpeg');
+        url('./images/hero-bg-tab-2x.jpeg');
     }
   }
 }
@@ -49,13 +49,13 @@
 @media (min-width: 769px) {
   .hero__overlay {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/hero-bg.jpeg');
+      url('./images/hero-bg.jpeg');
   }
 
   @media (min-resolution: 2dppx) {
     .hero__overlay {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/hero-bg-2x.jpeg');
+        url('./images/hero-bg-2x.jpeg');
     }
   }
 }
