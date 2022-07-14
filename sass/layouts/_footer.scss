@@ -12,6 +12,10 @@
     align-items: baseline;
     justify-content: space-around;
   }
+
+  @include desktop {
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
